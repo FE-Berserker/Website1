@@ -186,3 +186,5 @@ MIT License
 ---
 
 **祝你写作愉快！** ✍️
+
+Hugo blog deployed!
