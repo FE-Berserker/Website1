@@ -19,7 +19,7 @@ theme = 'kong-htop'
     dark_background = "#0d1117"
     
     # 头像设置
-    avatar = '/images/Baffalo.png'
+    brand_image = "/images/Baffalo.png"
     
     # 社交媒体链接
     github = 'https://github.com/FE-Berserker'
