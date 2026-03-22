@@ -1,0 +1,83 @@
+baseURL = 'https://yourusername.github.io/'
+languageCode = 'zh-CN'
+title = '我的博客'
+theme = 'kong-htop'
+
+[Author]
+name = '你的名字'
+
+[params]
+    # 数学公式支持 - 全局启用
+    math = true
+    
+    # 亮色模式颜色
+    link_color = "#268bd2"
+    text_color = "#222"
+    
+    # 深色模式颜色
+    dark_link_color = "#58a6ff"
+    dark_text_color = "#c9d1d9"
+    dark_background = "#0d1117"
+
+# 菜单配置
+[[menu.main]]
+    name = '首页'
+    url = '/'
+    weight = 10
+
+[[menu.main]]
+    name = '文章'
+    url = '/posts/'
+    weight = 20
+
+[[menu.main]]
+    name = '标签'
+    url = '/tags/'
+    weight = 30
+
+[[menu.main]]
+    name = '搜索'
+    url = '/search/'
+    weight = 40
+
+[[menu.main]]
+    name = '关于'
+    url = '/about/'
+    weight = 50
+
+# 页脚菜单
+[[menu.footer]]
+    name = 'GitHub'
+    url = 'https://github.com/yourusername'
+    weight = 10
+
+# 分页配置
+[pagination]
+pagerSize = 10
+
+# 输出格式（用于搜索功能）
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+section = ["HTML", "RSS"]
+
+# Markdown 配置（数学公式 passthrough）
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.extensions]
+            [markup.goldmark.extensions.passthrough]
+                enable = true
+                [markup.goldmark.extensions.passthrough.delimiters]
+                    block = [['\[', '\]'], ['$$', '$$']]
+                    inline = [['\(', '\)']]
+
+# 分类法（标签）
+[taxonomies]
+    tag = 'tags'
+    category = 'categories'
+
+# 隐私配置
+[privacy]
+    [privacy.disqus]
+        disable = true
+    [privacy.googleAnalytics]
+        disable = true
