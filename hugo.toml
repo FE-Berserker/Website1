@@ -1,4 +1,4 @@
-baseURL = 'https://fe-berserker.github.io/blog/'
+baseURL = 'https://fe-berserker.github.io/Website1/'
 languageCode = 'zh-CN'
 title = '我的博客'
 theme = 'kong-htop'
