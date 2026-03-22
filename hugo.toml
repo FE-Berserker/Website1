@@ -1,12 +1,11 @@
 baseURL = 'https://fe-berserker.github.io/Website1/'
 languageCode = 'zh-CN'
-title = '我的博客'
+title = 'Baffalo'
 theme = 'kong-htop'
 
-[Author]
-name = '你的名字'
-
 [params]
+    # 作者信息
+    author = 'FE-Beserker'
     # 数学公式支持 - 全局启用
     math = true
     
@@ -18,42 +17,76 @@ name = '你的名字'
     dark_link_color = "#58a6ff"
     dark_text_color = "#c9d1d9"
     dark_background = "#0d1117"
+    
+    # 头像设置
+    avatar = '/images/Baffalo.png'
+    
+    # 社交媒体链接
+    github = 'https://github.com/FE-Berserker'
+    zhihu = 'https://www.zhihu.com/column/c_1920893344915096610'
+    email = 'mailto:392176462@qq.com'
+    qq = 'http://wpa.qq.com/msgrd?v=3&uin=392176462&site=qq&menu=yes'
 
-# 菜单配置
+# 菜单配置 - Baffalo 分类体系
 [[menu.main]]
     name = '首页'
     url = '/'
     weight = 10
 
 [[menu.main]]
-    name = '文章'
-    url = '/posts/'
+    name = 'Baffalo框架'
+    url = '/categories/Baffalo框架/'
     weight = 20
+
+[[menu.main]]
+    name = 'Baffalo部件'
+    url = '/categories/Baffalo部件/'
+    weight = 30
+
+[[menu.main]]
+    name = 'Baffalo方法'
+    url = '/categories/Baffalo方法/'
+    weight = 40
+
+[[menu.main]]
+    name = 'Baffalo求解'
+    url = '/categories/Baffalo求解/'
+    weight = 50
+
+[[menu.main]]
+    name = 'Baffalo案例'
+    url = '/categories/Baffalo案例/'
+    weight = 60
+
+[[menu.main]]
+    name = 'Baffalo笔记'
+    url = '/categories/Baffalo笔记/'
+    weight = 70
 
 [[menu.main]]
     name = '标签'
     url = '/tags/'
-    weight = 30
+    weight = 80
 
 [[menu.main]]
     name = '搜索'
     url = '/search/'
-    weight = 40
-
-[[menu.main]]
-    name = '关于'
-    url = '/about/'
-    weight = 50
+    weight = 90
 
 # 页脚菜单
 [[menu.footer]]
     name = 'GitHub'
-    url = 'https://github.com/yourusername'
+    url = 'https://github.com/FE-Berserker'
     weight = 10
+
+[[menu.footer]]
+    name = '知乎'
+    url = 'https://www.zhihu.com/column/c_1920893344915096610'
+    weight = 20
 
 # 分页配置
 [pagination]
-pagerSize = 10
+pagerSize = 15
 
 # 输出格式（用于搜索功能）
 [outputs]
@@ -70,7 +103,7 @@ section = ["HTML", "RSS"]
                     block = [['\[', '\]'], ['$$', '$$']]
                     inline = [['\(', '\)']]
 
-# 分类法（标签）
+# 分类法（标签和分类）
 [taxonomies]
     tag = 'tags'
     category = 'categories'
